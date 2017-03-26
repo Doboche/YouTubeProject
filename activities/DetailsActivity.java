@@ -30,7 +30,6 @@ import fr.esilv.s8.tdnote.models.ItemsVideo;
 
 public class DetailsActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     private static final String VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=";
-    private RecyclerView recyclerView;
     private String channelid;
     private static final String ITEM = "ITEM";
     private TextView description;
