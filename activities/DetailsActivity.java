@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.TextView;
@@ -21,12 +19,8 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.google.gson.Gson;
 
-import org.w3c.dom.Text;
-
 import fr.esilv.s8.tdnote.Constants;
 import fr.esilv.s8.tdnote.R;
-import fr.esilv.s8.tdnote.adapters.DetailsAdapter;
-import fr.esilv.s8.tdnote.models.ItemVideo;
 import fr.esilv.s8.tdnote.models.Items;
 import fr.esilv.s8.tdnote.models.ItemsVideo;
 
@@ -85,10 +79,6 @@ public class DetailsActivity extends YouTubeBaseActivity implements YouTubePlaye
         Volley.newRequestQueue(this).add(videosRequest);
     }
 
-    private void setAdapter(Items items) {
-        DetailsAdapter adapter = new DetailsAdapter(items);
-        recyclerView.setAdapter(adapter);
-    }
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {

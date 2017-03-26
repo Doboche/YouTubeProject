@@ -10,8 +10,6 @@ import com.squareup.picasso.Picasso;
 import fr.esilv.s8.tdnote.R;
 import fr.esilv.s8.tdnote.interfaces.OnVideoSelectedListener;
 import fr.esilv.s8.tdnote.models.Item;
-import fr.esilv.s8.tdnote.models.Video;
-import fr.esilv.s8.tdnote.models.Videos;
 
 /**
  * Created by Dorian on 17/03/2017.

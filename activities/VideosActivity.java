@@ -1,6 +1,5 @@
 package fr.esilv.s8.tdnote.activities;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,17 +9,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
-import com.squareup.picasso.Picasso;
-
-import java.lang.reflect.Array;
-import java.util.List;
 
 import fr.esilv.s8.tdnote.Constants;
 import fr.esilv.s8.tdnote.R;
@@ -28,8 +22,6 @@ import fr.esilv.s8.tdnote.adapters.VideosAdapter;
 import fr.esilv.s8.tdnote.interfaces.OnVideoSelectedListener;
 import fr.esilv.s8.tdnote.models.Item;
 import fr.esilv.s8.tdnote.models.Items;
-import fr.esilv.s8.tdnote.models.Video;
-import fr.esilv.s8.tdnote.models.Videos;
 
 public class VideosActivity extends AppCompatActivity implements OnVideoSelectedListener{
 
